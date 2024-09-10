@@ -8,8 +8,12 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
   "dependencies": {
     "@prisma/client": "^5.19.1",
+    "coffee-app-nextjs": "file:",
     "next": "14.2.9",
     "react": "^18",
     "react-dom": "^18"
@@ -23,6 +27,7 @@
     "postcss": "^8",
     "prisma": "^5.19.1",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
