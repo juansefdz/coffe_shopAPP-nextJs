@@ -12,6 +12,7 @@
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.5",
     "@prisma/client": "^5.19.1",
     "coffee-app-nextjs": "file:",
     "next": "14.2.9",
