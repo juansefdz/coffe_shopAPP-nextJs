@@ -19,7 +19,7 @@ export default function CategoryIcon({ category }: CategoryIconProps) {
       } flex items-center gap-4 w-full border-t border-gray-200 p-3 last-of-type:border-b `}
     >
       <div className="w-16 h-16 relative">
-        <Image src={`/icon_${category.slug}.svg`} fill alt={category.name} />
+        <Image src={`/icon_${category.slug}.png`} fill alt={category.name} />
       </div>
 
       <Link className="text-xl font-bold" href={`/order/${category.slug}`}>

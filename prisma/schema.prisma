@@ -22,4 +22,27 @@ model Product{
   image String
   categoryId Int
   category Category @relation(fields: [categoryId], references: [id])
+  ordersItems OrderProduct[]
+}
+
+model Order{
+  id Int @id @default(autoincrement())
+  name String
+  total Float
+  date DateTime @default(now())
+  status Boolean @default(false)
+  orderReadyAt DateTime? //? significa que es opcional
+  orderProducts OrderProduct[]
+
+}
+
+//tabla intermedia
+
+model OrderProduct{
+  id Int @id @default(autoincrement())
+  orderId Int
+  productId Int
+  order Order @relation(fields: [orderId], references: [id])
+  product Product @relation(fields: [productId], references: [id])
+
 }
