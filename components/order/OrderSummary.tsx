@@ -9,6 +9,7 @@ import { OrderSchema } from "@/src/schema";
 
 export default function OrderSummary() {
   const order = useStore((state) => state.order);
+  const clearOrder = useStore((state) => state.clearOrder);
   const total = useMemo(
     () => order.reduce((total, item) => total + item.quantity * item.price, 0),
     [order]
@@ -36,6 +37,9 @@ export default function OrderSummary() {
         toast.error(issue.message);
       });
     }
+
+    toast.success("Pedido creado correctamente");
+    clearOrder();
   };
 
   return (
