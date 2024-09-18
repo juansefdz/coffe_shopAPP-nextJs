@@ -14,7 +14,7 @@ export default function ImagenUpload() {
       onSuccess={(result, { widget }) => {
         if (result.event === "success") {
           widget.close();
-          //@ts-expect-error: result.info might be undefined
+          // @ts-expect-error - secure_url is not in the type
           setImageUrl(result.info?.secure_url);
         }
       }}
@@ -46,12 +46,7 @@ export default function ImagenUpload() {
               )}
             </div>
           </div>
-          <input
-            type="hidden"
-            name="imagen"
-            value={imageUrl}
-           
-            />
+          <input type="hidden" name="image" value={imageUrl} />
         </>
       )}
     </CldUploadWidget>

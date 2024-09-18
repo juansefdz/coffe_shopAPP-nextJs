@@ -35,7 +35,7 @@ export default function AddproductForm({
       return;
     }
     toast.success("Producto Creado Exitosamente");
-    router.push("admin/products");
+    router.push("/admin/products");
   };
   return (
     <div className="bg-white mt-10 px-5 py-10 rounded-md shadow-md max-w-3xl mx-auto">
