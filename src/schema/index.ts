@@ -17,3 +17,13 @@ export const OrderSchema = z.object({
     }))
 
 });
+
+export const SearchSchema = z.object({
+
+    search: z.string()
+            .trim()
+            .min(1,'la busqueda de productos no puede ir en blanco!')
+            
+
+});
+
