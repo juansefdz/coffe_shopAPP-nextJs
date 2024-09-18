@@ -8,6 +8,7 @@ export default function ProductSearch() {
 
     const router = useRouter();
 
+    
     const handleSearch = (formData: FormData) => {
         const data={
             search:formData.get('search') 
@@ -26,7 +27,8 @@ export default function ProductSearch() {
     return (
         <form 
         className="flex items-center"
-         action="">
+        action={handleSearch}
+        >
             <input 
                 type="text" 
                 placeholder="Buscar Producto"
