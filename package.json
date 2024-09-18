@@ -15,7 +15,7 @@
     "@heroicons/react": "^2.1.5",
     "@prisma/client": "^5.19.1",
     "coffee-app-nextjs": "file:",
-    "next": "14.2.9",
+    "next": "^14.2.12",
     "next-cloudinary": "^6.13.0",
     "react": "^18",
     "react-dom": "^18",
