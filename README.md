@@ -7,13 +7,12 @@ Este proyecto es una aplicación web para la gestión y visualización de produc
 - **Gestión de Productos**: Visualiza una lista de productos de café con su respectiva descripción, precio y detalles adicionales.
 - **Renderizado del lado del servidor (SSR)**: Mejor rendimiento y SEO gracias a la capacidad de Next.js para renderizar páginas en el servidor.
 - **Enrutamiento basado en archivos**: Las páginas están organizadas de forma que cada archivo en la carpeta `pages` corresponda a una ruta de la aplicación.
-- **Estilos modulares**: Estilos organizados utilizando CSS/SCSS modulares para mantener un código limpio y escalable.
-
+- **Estilos modulares**: Estilos organizados utilizando Tailwind. 
 ## Tecnologías Utilizadas
 
 - **Next.js**: Framework de React optimizado para producción.
 - **React.js**: Biblioteca para la construcción de interfaces de usuario.
-- **CSS/SCSS**: Para la personalización de estilos y diseño responsive.
+- **TAILWIND**: Para la personalización de estilos y diseño responsive.
 - **JavaScript/ES6+**: Para la lógica y funcionalidad del frontend.
 
 ## Requisitos Previos
