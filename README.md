@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Coffee Shop App - Next.js
 
-## Getting Started
+Este proyecto es una aplicación web para la gestión y visualización de productos relacionados con una tienda de café, desarrollada con **Next.js**. La aplicación permite a los usuarios explorar una lista de productos disponibles, ver detalles específicos de cada uno, y navegar entre diferentes secciones de la tienda.
 
-First, run the development server:
+## Características del Proyecto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Gestión de Productos**: Visualiza una lista de productos de café con su respectiva descripción, precio y detalles adicionales.
+- **Renderizado del lado del servidor (SSR)**: Mejor rendimiento y SEO gracias a la capacidad de Next.js para renderizar páginas en el servidor.
+- **Enrutamiento basado en archivos**: Las páginas están organizadas de forma que cada archivo en la carpeta `pages` corresponda a una ruta de la aplicación.
+- **Estilos modulares**: Estilos organizados utilizando CSS/SCSS modulares para mantener un código limpio y escalable.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: Framework de React optimizado para producción.
+- **React.js**: Biblioteca para la construcción de interfaces de usuario.
+- **CSS/SCSS**: Para la personalización de estilos y diseño responsive.
+- **JavaScript/ES6+**: Para la lógica y funcionalidad del frontend.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Requisitos Previos
 
-## Learn More
+Asegúrate de tener las siguientes herramientas instaladas en tu sistema antes de clonar el proyecto:
 
-To learn more about Next.js, take a look at the following resources:
+- **Node.js** (v14 o superior)
+- **NPM** (v6 o superior) o **Yarn** como gestor de paquetes
+- **Git** para clonar el repositorio
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Instalación y Ejecución del Proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Sigue estos pasos para poner en marcha el proyecto en tu entorno local:
 
-## Deploy on Vercel
+### 1. Clonar el Repositorio
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Primero, clona el repositorio en tu máquina local:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+`git clone https://github.com/juansefdz/coffe_shopAPP-nextJs.git`
+
+### 2. Navegar al Directorio del Proyecto
+Una vez clonado el repositorio, navega al directorio del proyecto:
+
+`cd coffe_shopAPP-nextJs`
+### 3. Instalar las Dependencias
+Instala todas las dependencias necesarias utilizando npm o yarn:
+Con npm:
+`npm install`
+### 4. Ejecutar el Proyecto en Desarrollo
+Inicia el servidor de desarrollo de Next.js:
+`npm run dev`
+
+
+El servidor de desarrollo estará corriendo en` http://localhost:3000`. Abre tu navegador y visita esa URL para ver la aplicación en acción.
+
